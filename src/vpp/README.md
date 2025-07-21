@@ -20,11 +20,11 @@ at which the file was created. A new file is produced daily between 12:30 and 13
 ### Forecasts:
 
 For each asset, FlexPower forecasts the electricity production for 15-minute delivery intervals,
-representing the average power expected to be produced by the asset over a quarter-hour, in kilowatt.
+representing the average power expected to be produced by the asset over a quarter-hour, in kilowatt.\
 This forecast is updated every 15 minutes and allows FlexPower to know how much electricity will be available to sell
 on the markets for a quarter-hour in the future. The latest forecast for each quarter-hour is calculated at the start
 of each 15-minute delivery range, but the latest "tradeable" forecast for each asset is produced 15 minutes before
-delivery start (due to trading gate closures).
+delivery start (due to trading gate closures).\
 For example, the latest forecast for the delivery start `2025-06-08T12:00:00Z` has the version `2025-06-08T12:00:00Z`
 but the latest tradeable forecast has the version `2025-06-08T11:45:00Z`.
 To query the forecasts, use the following code snippet:
